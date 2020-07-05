@@ -76,7 +76,7 @@ void spread(int x, int y){
 }
 
 void mousePressed(){
-  Data data = datas[(int)(mouseX)][(int)(mouseY)];
+  Data data = datas[(int)(mouseX/gridInterval)][(int)(mouseY/gridInterval)];
   data.amount = random(0, 10000);
   data.tier = random(0, 50);
 }
